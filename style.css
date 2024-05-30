@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #020933;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 300px;
+  width: 600px;
+  background-color: rgb(147, 181, 211);
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px 10px #04081f;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Courier New", Courier, monospace;
+  margin: 30px 10px;
+}
+
+.container span {
+  color: rgb(5, 78, 54);
+  border-bottom: 3px solid green;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* background-color: red; */
+}
+
+.box input {
+  width: 80%;
+  height: 40px;
+  padding: 15px 15px;
+  border-radius: 10px;
+  border: none;
+  color: #020933;
+  font-size: 18px;
+  text-align: left;
+  background-color: rgb(200, 215, 227);
+}
+
+.box i {
+  color: #020933;
+  font-size: 25px;
+  position: absolute;
+  right: 12%;
+  cursor: pointer;
+}
+
+.save-btn {
+  font-size: 22px;
+  color: #fff;
+  background: #69ebbb;
+  width: 220px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 8px 5px -5px rgba(0, 0, 0, 0.2);
+  border: none;
+  transition: 0.2s;
+  margin: 15px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  pointer-events: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #fff;
+  animation: an1 1s ease infinite;
+}
+
+@keyframes an1 {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
